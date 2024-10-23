@@ -1,0 +1,108 @@
+/* General Styling /
+body {
+    font-family: 'Trebuchet MS', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1A1A1A;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+/ Background Image for the Page /
+body::before {
+    content: "";
+    background: url('https://example.com/oak-wood-background.jpg') no-repeat center center fixed; / Replace with actual oak wood texture image URL /
+    background-size: cover;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.4; / Slight opacity to make content stand out /
+    z-index: -1;
+}
+
+/ Main Header Styling /
+header {
+    background-color: #333333;
+    padding: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+h1 {
+    font-size: 40px;
+    color: #FFD700; / Gold color /
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+    margin: 0;
+}
+
+nav {
+    margin-top: 15px;
+}
+
+nav a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 20px;
+    margin: 0 15px;
+    display: inline-block;
+    transition: all 0.3s;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+}
+
+nav a:hover {
+    background-color: #FFD700;
+    color: #333333;
+}
+
+/ Content Area Styling /
+.container {
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.8); / Dark background for content area /
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+}
+
+h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #FFD700;
+}
+
+/ Button Styling /
+.button {
+    background-color: #FFD700;
+    color: #333333;
+    padding: 15px 30px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #FFA500;
+}
+
+/ Footer Styling */
+footer {
+    margin-top: 50px;
+    padding: 20px 0;
+    background-color: #333333;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+    color: #BBBBBB;
+}
